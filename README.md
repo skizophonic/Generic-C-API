@@ -31,4 +31,5 @@ Implementation can be done by instantiating a File object to create a file and i
 
 The main objective and motivation was to consolidate knowledge in C++ programming.
 The API is very simple and it needs further improvement.
-The bank account implementation is merly exemplary and it needs a lot of improvement.
+
+The bank account implementation is merly exemplary and it needs a lot of improvement. It uses the generic API to provide a simple bank account management and transactions.
