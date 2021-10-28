@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Account.h"
-#include "File.h"
+#include "./models/Account.h"
+#include "./datasources/File.h"
 #include <iostream>
 #include <iomanip>
-#include "Settings.h"
+#include "./datasources/Settings.h"
 
 int insertAccount() {
 	File<Settings> settingsFile("Settings.dat");

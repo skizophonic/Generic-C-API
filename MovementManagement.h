@@ -1,9 +1,9 @@
 #pragma once
 
-#include "File.h"
-#include "Account.h"
-#include "Movement.h"
-#include "Settings.h"
+#include "./datasources/File.h"
+#include "./models/Account.h"
+#include "./models/Movement.h"
+#include "./datasources/Settings.h"
 #include <iostream>
 
 File<Movement> fileMovConnection() {

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "BaseMenu.h"
-#include "Movement.h"
+#include "./menus/BaseMenu.h"
+#include "./models/Movement.h"
 #include "MovementManagement.h"
 
 

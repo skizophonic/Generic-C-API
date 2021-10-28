@@ -1,8 +1,8 @@
 #pragma once
 
-#include "BaseMenu.h"
-#include "AccountMenu.h"
-#include "MovementMenu.h"
+#include "./menus/BaseMenu.h"
+#include "./menus/AccountMenu.h"
+#include "./menus/MovementMenu.h"
 
 
 class MainMenu : public BaseMenu {

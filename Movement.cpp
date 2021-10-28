@@ -1,4 +1,4 @@
-#include "Movement.h"
+#include "./models/Movement.h"
 #include <string>
 
 Movement::Movement(int _movId, const std::string& movType, const std::string& movCurrency, float _movValue, int _accountNumber) : movId{ _movId }, movValue{ _movValue }, accountNumber{ _accountNumber }{
