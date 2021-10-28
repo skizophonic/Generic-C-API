@@ -1,6 +1,6 @@
 ## Generic-C-API
 
-# A simple generic Poco API for CRUD operations with Random Access Files (console application)
+A simple generic Poco API for CRUD operations with Random Access Files (console application)
 
 It allows to save/load plain old C++ object data into/from random access data files, regardless of data types.
 
