@@ -17,7 +17,7 @@ The generic API has a main template class: File. File has the core methods that 
 - obtain ordered data lists
 - import objects from files
 - export data to .txt
--  
+ 
 Data flows through string streams. A multimap data structure is also provided, allowing in-memory data manipulation so more personalized implementation is possible. 
 
 The Menu module allows to create "unending" menus and sub-menus. It follows a logic similar to linked lists. The main class BaseMenu contains the core methods. A sub-menu is created by extending the BaseMenu class and implementing load() and printOptions() methods.
