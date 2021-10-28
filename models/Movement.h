@@ -45,13 +45,13 @@ public:
 	}
 
 	void outputLine(std::ostream& output, const Movement& record) {
-		/*
+		
 		output << std::left << std::setw(10) << record.getId()
 			<< std::setw(11) << record.getMovType()
 			<< std::setw(11) << record.getMovCurrency()
 			<< std::setw(11) << record.getMovValue()
 			<< std::setw(10) << std::setprecision(2) << std::right << std::fixed
 			<< std::showpoint << record.getAccountNumber() << std::endl;
-			*/
+			
 	}
 };

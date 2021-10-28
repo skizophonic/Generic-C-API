@@ -2,10 +2,10 @@
 //#ifndef ACCOUNT.H
 //#define ACCOUNT_H
 #include <string>
-#include <ostream> //verificar se precisa
+#include <ostream> 
 #include <iomanip> 
 #include <chrono>
-#include <ctime>   //ver se é necessário
+#include <ctime>  
 
 class Account {
 

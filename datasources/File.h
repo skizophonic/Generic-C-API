@@ -30,11 +30,11 @@ public:
 			std::cout << e.what() << std::endl;
 			std::ifstream test;
 			test.open(name);
-			if (test) {				//ficheiro existe mas está inacessivel
+			if (test) {				
 				std::cout << "Error: it was not possible to establish a connection to the file: Check file and folder permissions." << std::endl;
 				exit(EXIT_FAILURE);
 			}
-			else {					//ficheiro nao existe, cria um novo
+			else {					
 				f.open(name, std::ios::in | std::ios::out | std::ios::trunc | std::ios::binary);
 				std::cout << "A new file " << name << " has been created.\n" << std::endl;
 			}
@@ -109,7 +109,7 @@ public:
 	void deleteRecord(int _id) {
 		T t;
 		f.seekp((_id ) * sizeof(T));
-		f.write(reinterpret_cast<const char*>(&t), sizeof(T));  //T em branco
+		f.write(reinterpret_cast<const char*>(&t), sizeof(T));  
 			if (!f) {
 				std::cerr << "Error: it was not possible to delete the record." << std::endl;
 				exit(EXIT_FAILURE);
@@ -167,24 +167,6 @@ public:
 		f.close();
 	}
 
-	auto putIntoMapFiltered(T& t, int searchAccountNumber) {
-
-		f.seekg(0);
-
-		while (!f.eof()) {
-
-			if (t.getId() >= 0) {
-				if (t.getAccountNumber() == searchAccountNumber) {
-					map.emplace(t.getId(), T(t));
-				}
-			}
-			f.read(reinterpret_cast<char*>(&t), sizeof(T));
-
-		}
-		f.clear();
-		f.close();
-		return map;
-	}
 
 	void putIntoOrderedMap(T& t) {
 		

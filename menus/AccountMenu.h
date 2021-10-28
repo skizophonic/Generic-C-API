@@ -19,6 +19,7 @@ public:
 	void load() override {
 		int choice{ 0 };
 		std::cin >> choice;
+
 		switch (choice) {
 		case 1: {
 			insertAccount();
