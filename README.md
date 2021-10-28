@@ -8,7 +8,16 @@ The file data structure is defined by a fixed lenght data block that results fro
 
 This example of implementation consists in 3 modules: Dynamic Menus, Generic CRUD API and an example of implementation (bank account management)
 
-The generic API has a main template class: File. File has the core methods that allows file management and CRUD operations. It is possible to create a file, create records, read records, delete records, obtain ordered data lists, import objects from files and export data to .txt. 
+The generic API has a main template class: File. File has the core methods that allows file management and CRUD operations. It is possible to:
+- create files 
+- create records 
+- read records 
+- update records
+- delete records 
+- obtain ordered data lists
+- import objects from files
+- export data to .txt
+-  
 Data flows through string streams. A multimap data structure is also provided, allowing in-memory data manipulation so more personalized implementation is possible. 
 
 The Menu module allows to create "unending" menus and sub-menus. It follows a logic similar to linked lists. The main class BaseMenu contains the core methods. A sub-menu is created by extending the BaseMenu class and implementing load() and printOptions() methods.
